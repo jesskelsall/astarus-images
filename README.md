@@ -12,11 +12,21 @@ You'll only be robbing yourself of future excitement.
 
 ---
 
-## Making New IDs
+## Commands
+
+### Making New IDs
 
 ```javascript
 const nanoid = require('nanoid')
 const random = nanoid.customAlphabet('1234567890abcdef', 16)
 
 random()
+```
+
+### Cropping Portraits
+
+```bash
+function hfc() {
+  convert $1 -crop 1200x2048+400+0 $1
+}
 ```
